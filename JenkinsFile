@@ -34,7 +34,7 @@ pipeline {
 
                 echo "Running tests..."    
 
-                sh 'pytest'
+                 sh 'python3 -m unittest test_app.py'
 
             }
 
@@ -46,7 +46,7 @@ pipeline {
 
                 echo "Building the application..."
 
-                sh 'python app.py'
+               sh 'python3 app.py'
 
             }
 
